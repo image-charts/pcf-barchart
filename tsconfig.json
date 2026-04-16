@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./out",
+    "rootDir": "./",
+    "lib": ["ES2017", "DOM"],
+    "types": ["powerapps-component-framework", "node"]
+  },
+  "include": [
+    "BarChartGenerator/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "out",
+    "Solutions"
+  ]
+}

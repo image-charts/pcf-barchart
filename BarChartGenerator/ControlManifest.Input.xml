@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ImageCharts"
+           constructor="BarChartGenerator"
+           version="1.0.0"
+           display-name-key="BarChartGenerator"
+           description-key="Generates signed Image-Charts Bar Charts for Power Apps"
+           control-type="standard">
+
+    <!-- ============================================================ -->
+    <!-- Authentication Properties -->
+    <!-- ============================================================ -->
+
+    <property name="accountId"
+              display-name-key="Account ID"
+              description-key="Your Image-Charts Enterprise Account ID (icac). Leave empty if using Private Cloud mode."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <property name="secretKey"
+              display-name-key="Secret Key"
+              description-key="Your Image-Charts Enterprise Secret Key for HMAC-SHA256 signing."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <property name="privateCloudDomain"
+              display-name-key="Private Cloud Domain"
+              description-key="Your Image-Charts Private Cloud domain (e.g., charts.mycompany.com)."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <!-- ============================================================ -->
+    <!-- Chart Data Properties -->
+    <!-- ============================================================ -->
+
+    <property name="data"
+              display-name-key="Data"
+              description-key="Chart data values. Use comma-separated (10,20,30) or pipe-separated (10|20|30) format."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="true" />
+
+    <property name="labels"
+              display-name-key="Labels"
+              description-key="Chart labels. Use comma-separated (A,B,C) or pipe-separated (A|B|C) format."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <property name="colors"
+              display-name-key="Colors"
+              description-key="Bar colors. Use pipe-separated hex values (FF0000|00FF00|0000FF)."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <property name="title"
+              display-name-key="Title"
+              description-key="Chart title displayed above the chart."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <property name="orientation"
+              display-name-key="Orientation"
+              description-key="Bar orientation: 'vertical' (default) or 'horizontal'."
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <!-- ============================================================ -->
+    <!-- Chart Size and Style -->
+    <!-- ============================================================ -->
+
+    <property name="chartSize"
+              display-name-key="Chart Size"
+              description-key="Chart size in pixels (format: WIDTHxHEIGHT). Default: 300x300"
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <!-- ============================================================ -->
+    <!-- Advanced Options -->
+    <!-- ============================================================ -->
+
+    <property name="advancedOptions"
+              display-name-key="Advanced Options"
+              description-key="Additional Image-Charts parameters (format: key=value&amp;key2=value2)"
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <property name="showDebugUrl"
+              display-name-key="Show Debug URL"
+              description-key="Display the generated URL below the chart for debugging"
+              of-type="TwoOptions"
+              usage="input"
+              required="false" />
+
+    <property name="errorPlaceholderUrl"
+              display-name-key="Error Placeholder URL"
+              description-key="Custom image URL to display when the chart fails to load"
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <!-- ============================================================ -->
+    <!-- Output Properties -->
+    <!-- ============================================================ -->
+
+    <property name="signedUrl"
+              display-name-key="Signed URL"
+              description-key="The full Image-Charts URL (signed if Enterprise mode). Read-only output."
+              of-type="SingleLine.Text"
+              usage="output" />
+
+    <!-- ============================================================ -->
+    <!-- Resources -->
+    <!-- ============================================================ -->
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/BarChartGenerator.css" order="1" />
+    </resources>
+
+  </control>
+</manifest>
