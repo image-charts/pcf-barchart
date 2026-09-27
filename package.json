@@ -1,6 +1,6 @@
 {
   "name": "@image-charts/pcf-barchart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Image-Charts Bar Chart Generator for Microsoft Power Apps (PCF Component)",
   "main": "solution/ImageChartsBarChart.zip",
   "types": "src/BarChartGenerator/index.d.ts",
