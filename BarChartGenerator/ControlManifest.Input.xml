@@ -13,14 +13,14 @@
 
     <property name="accountId"
               display-name-key="Account ID"
-              description-key="Your Image-Charts Enterprise Account ID (icac). Leave empty if using Private Cloud mode."
+              description-key="Your Image-Charts paid plan account ID (icac). Leave empty if using Private Cloud mode."
               of-type="SingleLine.Text"
               usage="input"
               required="false" />
 
     <property name="secretKey"
               display-name-key="Secret Key"
-              description-key="Your Image-Charts Enterprise Secret Key for HMAC-SHA256 signing."
+              description-key="Your Image-Charts paid plan secret key for HMAC-SHA256 signing."
               of-type="SingleLine.Text"
               usage="input"
               required="false" />

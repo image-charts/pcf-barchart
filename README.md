@@ -25,8 +25,8 @@ BarChartGenerator.labels = "Q1,Q2,Q3,Q4"
 
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
-| `accountId` | Text | No* | Enterprise Account ID |
-| `secretKey` | Text | No* | Enterprise Secret Key |
+| `accountId` | Text | No* | Paid plan account ID |
+| `secretKey` | Text | No* | Paid plan secret key |
 | `privateCloudDomain` | Text | No* | Private Cloud domain |
 | `data` | Text | **Yes** | Chart values (CSV or pipe-separated) |
 | `labels` | Text | No | X-axis labels |
