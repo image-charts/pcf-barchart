@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.0.0] - 2026-11-25
+## [1.0.0] - 2026-11-26
 
 ### Added
 - Initial release of Image-Charts Bar Chart Generator PCF component
